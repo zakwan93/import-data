@@ -1,6 +1,10 @@
-<h1>Editing Contact</h1>
-
-<%= render 'form', contact: @contact %>
-
-<%= link_to 'Show', @contact %> |
-<%= link_to 'Back', contacts_path %>
+<div class="container vh-100">
+  <div class="row vh-100 justify-content-center align-items-center">
+      <div class="col-10 col-md-8 col-lg-6">
+          <h1 class="text-center font-monospace">Edit Contact</h1>
+          <%= render 'form', contact: @contact %>
+          <%= link_to 'Show', @contact %> |
+          <%= link_to 'Back', contacts_path %>
+      </div>
+    </div>
+</div>

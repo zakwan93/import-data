@@ -58,3 +58,7 @@ gem "roo"
 gem "iconv"
 gem 'ransack', '~> 2.1'
 gem "roo-xls"
+
+gem 'rubyzip'
+gem 'axlsx'
+gem 'axlsx_rails'

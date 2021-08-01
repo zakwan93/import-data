@@ -1,6 +1,5 @@
 class Contact < ApplicationRecord
 
-  validates_presence_of :file
   # def self.import(file)
   #   CSV.foreach(file.path, headers: true,header_converters: :symbol) do |row|
   #     contact = find_by(fist_name: row["fist_name"]) || new

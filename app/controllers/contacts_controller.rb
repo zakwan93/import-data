@@ -4,6 +4,10 @@ class ContactsController < ApplicationController
   # GET /contacts or /contacts.json
   def index
     @contacts = Contact.all
+    respond_to do |format|
+      format.html
+      format.xlsx
+    end
   end
 
   # GET /contacts/1 or /contacts/1.json

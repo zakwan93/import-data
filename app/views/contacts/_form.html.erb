@@ -10,23 +10,29 @@
       </ul>
     </div>
   <% end %>
+  <div class="card">
+    <div class="card-body">
+      <div class="mb-3">
+      <%= form.label :first_name, { class: "form-label"} %>
+      <%= form.text_field :first_name, { class: "form-control", placeholder: "First Name" } %>
+    </div>
 
-  <div class="field">
-    <%= form.label :first_name %>
-    <%= form.text_field :first_name %>
-  </div>
+    <div class="mb-3">
+      <%= form.label :last_name, { class: "form-label"} %>
+      <%= form.text_field :last_name, { class: "form-control", placeholder: "Site Code" } %>
+    </div>
 
-  <div class="field">
-    <%= form.label :last_name %>
-    <%= form.text_field :last_name %>
-  </div>
+    <div class="mb-3">
+      <%= form.label :age, { class: "form-label"} %>
+      <%= form.number_field :age, { class: "form-control", placeholder: "Description" } %>
+    </div>
 
-  <div class="field">
-    <%= form.label :age %>
-    <%= form.number_field :age %>
-  </div>
+    <%= form.submit "Add", class: "btn btn-primary" %>
 
-  <div class="actions">
-    <%= form.submit %>
   </div>
+</div>
 <% end %>
+
+
+
+
