@@ -31,10 +31,11 @@
     </div>
     <div class="col-md-6 text-left">   
       <%= form_tag import_contacts_path, multipart:true do %>
-        <%= file_field_tag :file %>
+        <%= file_field_tag :file, required: true, accept: ".xls, .xlsx"  %>
         <%= submit_tag "Upload File" %>
       <% end %>
     </div>
+    <h5 class="font-monospace text-center mt-4 p-3 text-warning bg-light">Only can attached .xls and .xlsx file</h5>
   </div>
 </div>
 
